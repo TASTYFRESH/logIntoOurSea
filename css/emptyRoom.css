@@ -1,0 +1,13 @@
+#empty_1_bg{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/desktop/emptyRoom/emptyRoom_01_bg.png");
+    background-size: cover;
+}
+
+#empty_2_bg{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/desktop/emptyRoom/emptyRoom_02_bg.png");
+    background-size: cover;
+}
