@@ -1,0 +1,52 @@
+@keyframes flicker {
+    0%{opacity: 0;}
+    50%{opacity: 100%;}
+    100%{opacity: 100%;}
+}
+
+body{
+    background-image: url(../img/desktop/toolRoom/toolRoom_02_2_bg.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#left img[src="../../img/desktop/toolRoom/toolRoom_02_2_leftText.png"]{
+    max-width: 21vw;
+}
+
+#left img[src="../../img/desktop/toolRoom/toolRoom_02_2_animation_leftText.png"]{
+    max-width: 30vw;
+    margin-top: -15vh;
+}
+
+#left img[src="../../img/desktop/toolRoom/toolRoom_02_2_animation_leftText.png"]:hover{
+    opacity: 10%;
+    animation-name: flicker;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+}
+
+#left{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6vw;
+    margin-top: 20vh;
+}
+
+#btn_back img[src="../../img/desktop/toolRoom/toolRoom_02_2_btn_back.png"]{
+    max-width: 15vw;
+}
+
+#btn_back{
+    margin-left: 42vw;
+    margin-top: 28vh;
+}
+
