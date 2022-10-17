@@ -1,0 +1,14 @@
+@keyframes flicker {
+    from{opacity: 100%;}
+    to{opacity: 0;}
+    to{opacity: 100%;}
+    to{opacity: 0;}
+    to{opacity: 100%;}
+    
+}
+
+#floor_animation_star {
+    animation-name: flicker;
+    animation-duration: 0.2s;
+
+}
