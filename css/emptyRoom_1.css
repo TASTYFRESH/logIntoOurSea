@@ -3,6 +3,7 @@
     height: 100vh;
     background-image: url("../img/desktop/emptyRoom/emptyRoom_01_bg.png");
     background-size: cover;
+    position: relative;
 }
 
 #animation_1_left{
@@ -40,4 +41,34 @@
 #animation_1_right:hover{
     cursor: pointer;
     transform: scale(1.2);
+}
+
+/* RWD */
+@media (max-width: 576px){
+    #empty_1_bg{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        background-image: url("../img/mobile/emptyRoom/emptyRoom_01_m_bg.png");
+        background-size: cover;
+    }
+    #animation_1_left{
+        width: 21.72vw;
+        height: 14.98vh;
+        position: absolute;
+        top: 71.24vh;
+        left:5.11vw;
+        background-image: url("../img/mobile/emptyRoom/emptyRoom_01_m_left.png");
+        background-size: cover;
+    }
+    #empty_1_arrow{
+        width: 5.9vw;
+        height: 33.333vh;
+        position: absolute;
+        top: 58.52vh;
+        left: 57.51vw;
+        background-image: url("../img/desktop/emptyRoom/emptyRoom_01_rightArrow.png");
+        background-size: cover;
+        z-index: 3;
+    }
 }

@@ -48,3 +48,8 @@
     background-size: cover;
     z-index: 99;
 }
+
+/* RWd */
+@media (max-width: 576px){
+    
+}
