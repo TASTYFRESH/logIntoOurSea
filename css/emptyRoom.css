@@ -10,4 +10,43 @@
     height: 100vh;
     background-image: url("../img/desktop/emptyRoom/emptyRoom_02_bg.png");
     background-size: cover;
+    position: relative;
 }
+#animation_1_left{
+    width: 27.947vw;
+    height: 43.1vh;
+    position: absolute;
+    left: 3.17vw;
+    top: 56vh;
+    z-index: 2;
+    background-image: url("../img/desktop/emptyRoom/emptyRoom_01_animation_left.png");
+    background-size: cover;
+}
+
+#empty_1_arrow{
+    width: 5.9vw;
+    height: 33.333vh;
+    position: absolute;
+    top: 58.52vh;
+    left: 57.51vw;
+    background-image: url("../img/desktop/emptyRoom/emptyRoom_01_rightArrow.png");
+    background-size: cover;
+    z-index: 3;
+}
+
+
+#animation_1_right{
+    width: 11.77vw;
+    height: 87.31vh;
+    position: absolute;
+    top: 6.38vh;
+    left: 84.42vw;
+    background-image: url("../img/desktop/emptyRoom/emptyRoom_01_animation_img_right.png");
+    background-size: cover;
+    z-index: 3;
+}
+#animation_1_right:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+

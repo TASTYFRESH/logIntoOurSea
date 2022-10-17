@@ -1,0 +1,15 @@
+@keyframes opacity_fadeIn{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#animation_1_left{
+    animation: opacity_fadeIn 0.2s infinite;
+}
