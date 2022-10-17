@@ -1,17 +1,80 @@
 body{
     background-image: url(../img/desktop/floor/floor_bg.png);
+    background-size: cover;
 }
 
 #container{
     height: 100vh;
     width: 100vw;
+}
+
+#floor_clickBtn{
+    width: fit-content;
+    height: fit-content;
     position: absolute;
+    top: 30vh;
+    right: 6vw;
+    z-index: 999;
+}
+
+#floor_clickBtn img{
+    width: 8.5vw;
+}
+
+#floor_text{
+    width: 46vw;
+    height: auto;
+    position: absolute;
+    left: 27vw;
+    bottom: 5vh;
     z-index: 2;
 }
 
-#floor_animation_star img{
-    height: 100vh;
+#floor_img_bottom{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 3vw;
+    bottom: 5vh;
+}
+
+#floor_img_bottom img{
+    height: 18.5vh;
+    width: auto;
+}
+
+#floor_img_top{
+    width: auto;
+    height: 63vh;
+    position: absolute;
+    top: 4vh;
+    right: 3vw;
+}
+
+#floor_animation_saso{
+    width: fit-content;
+    height: auto;
+    position: absolute;
+    left: 20vw;
+    top: 5vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+}
+
+#floor_animation_saso img{
+    width: 20vw;
+    height: auto;
+    margin-bottom: -15px;
+}
+
+#floor_animation_star{
+    height: auto;
     width: 100vw;
     position: absolute;
+    left: 0;
+    bottom: 0;
     z-index: 1;
 }
