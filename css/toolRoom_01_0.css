@@ -1,0 +1,36 @@
+@keyframes flicker {
+    0%{opacity: 100%;}
+    75%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+body{
+    background-image: url(../img/desktop/toolRoom/toolRoom_01_bg.png);
+    background-size: contain;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+}
+
+#container img{
+position: absolute;
+}
+
+#container img[src="../../img/desktop/toolRoom/toolRoom_01_btn_vedio.png"]{
+    width: 6vw;
+    height: auto;
+    top: 55vh;
+    right: 35vw;
+}
+
+#container img[src="../../img/desktop/toolRoom/toolRoom_01_btn_next.png"]{
+    width: 8.5vw;
+    height: auto;
+    bottom: 8vh;
+    left: 35vw;
+    animation-name: flicker;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+}
