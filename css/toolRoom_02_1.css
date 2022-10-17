@@ -1,0 +1,25 @@
+body{
+    background-image: url(../img/desktop/toolRoom/toolRoom_02_1_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+}
+
+#img_size img[src="../../img/desktop/toolRoom/toolRoom_02_1_img.png"]{
+    width: auto;
+    height: 90.6vh;
+    position: absolute;
+    top: 5vh;
+    left: 4vw;
+}
+
+img[src="../../img/desktop/toolRoom/toolRoom_02_1_btn_back.png"]{
+    height: 12.35vh;
+    position: absolute;
+    left: 4vw;
+    top: 70vh;
+}
