@@ -47,10 +47,12 @@
 @media (max-width: 576px){
     #empty_1_bg{
         width: 100vw;
+        /* 待處理 */
         height: 100vh;
         position: relative;
         background-image: url("../img/mobile/emptyRoom/emptyRoom_01_m_bg.png");
         background-size: cover;
+        background-repeat: no-repeat;
     }
     #animation_1_left{
         width: 21.72vw;
@@ -68,6 +70,18 @@
         top: 58.52vh;
         left: 57.51vw;
         background-image: url("../img/desktop/emptyRoom/emptyRoom_01_rightArrow.png");
+        background-size: cover;
+        z-index: 3;
+    }
+    /* 有問題 */
+    #animation_1_right{
+        width: 85vw;
+        height: 15vh;
+        position: absolute;
+        top: 84%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-image: url("../img/mobile/emptyRoom/emptyRoom_01_m_animation_img_bottom.png");
         background-size: cover;
         z-index: 3;
     }

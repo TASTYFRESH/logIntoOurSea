@@ -51,5 +51,39 @@
 
 /* RWd */
 @media (max-width: 576px){
-    
+    #empty_2_bg{
+        /* 寬高單待處理 */
+        width: 100vw;
+        height: 100vh;
+
+        background-image: url("../img/mobile/emptyRoom/emptyRoom_02_m_bg.png");
+        background-size: cover;
+        position: relative;
+    }
+    #empty_2_left_img{
+        width: 87.89vw;
+        height: 30vh;
+        position: absolute;
+        top: 50vh;
+        left: 4.883vw;
+        background-image: url("../img/mobile/emptyRoom/emptyRoom_02_m_text_blueText.png");
+        background-size: cover;
+    }
+    /* saso,blue併入left_img */
+    #empty_2_saso{
+        display: none;
+    }
+    #empty_2_blue{
+        display: none;
+    }
+
+    #empty_2_right_img{
+        width: 58.12vw;
+        height: 26.98vh;
+        position: absolute;
+        top: 4.61vh;
+        left: 42.09vw;
+        background-image: url("../img/mobile/emptyRoom/emptyRoom_02_m_text_whiteText.png");
+        background-size: cover;
+    }
 }
