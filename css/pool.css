@@ -24,7 +24,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* 最上層 */
     z-index: 99;
+
 }
 
 
@@ -34,7 +36,8 @@
     height: 61.87vh;
     background-image: url("../img/desktop/pool/pool_drag_centerImg.png");
     background-size: cover;
-    /* 最上層 */
+    cursor: grab;
+
 
 }
 

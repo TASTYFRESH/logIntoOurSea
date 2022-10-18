@@ -46,10 +46,52 @@
     left: 9.86vw;
     background-image: url("../img/desktop/emptyRoom/emptyRoom_02_text_saso.png");
     background-size: cover;
-    z-index: 99;
+    z-index: 4;
 }
 
-/* RWd */
+/* #region 文字動畫 */
+
+#text_container{
+    width: calc(180 / 1920 * 100vw);
+    height: calc(480 / 1080 * 100vh);
+    position: absolute;
+    top: calc( 135/1080 * 100vh);
+    left: calc(1226.48/1920 * 100vw);
+    z-index: 99;
+    padding: 0;
+}
+
+.what_text{
+    width: calc(150 / 1920 * 100vw);
+    height: calc(20 / 1080 * 100vh);
+    background-image: url("../img/desktop/emptyRoom/emptyRoom_02_animation_01.png");
+    background-size: cover;
+}
+
+.margin_1{
+    margin-right: 0;
+    margin-bottom: calc(3 / 1080 * 100vh);
+}
+.margin_1:last-child{
+    margin-bottom: 0px;
+}
+.margin_2{
+    margin-left: calc(22 / 1920 * 100vw);
+    margin-bottom: calc(-10 / 1080 * 100vh);
+}
+
+.amI_text{
+    width: calc(113 / 1920 * 100vw);
+    height: calc(20 / 1080 * 100vh);
+    margin-left: calc(22 / 1920 * 100vw);
+    background-image: url("../img/desktop/emptyRoom/emptyRoom_02_animation_35.png");
+    background-size: cover;
+}
+
+/* #endregion  */
+
+
+/* #region RWd */
 @media (max-width: 576px){
     #empty_2_bg{
         /* 寬高單待處理 */
@@ -87,3 +129,5 @@
         background-size: cover;
     }
 }
+
+/* #endregion  */
