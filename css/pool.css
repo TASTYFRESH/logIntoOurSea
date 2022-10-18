@@ -26,3 +26,50 @@
     background-image: url("../img/desktop/pool/pool_drag_centerImg.png");
     background-size: cover;
 }
+
+#pool_line{
+    width: 15.38vw;
+    height: 77.63vh;
+    background-image: url("../img/desktop/pool/pool_line.png");
+    position: absolute;
+    top: 22.37vh;
+    left: 81.5vw;
+}
+#animate_right{
+    width: 7.48vw;
+    height: 22vh;
+    background-image: url("../img/desktop/pool/pool_animation_right.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 13.7vh;
+    left: 63.98vw;
+
+}
+#animate_left{
+    width: 8.17vw;
+    height: 24vh;
+    background-image: url("../img/desktop/pool/pool_animation_left.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 66.46vh;
+    left: 33.67vw;
+}
+#animate_arrow{
+    width: 4.72vw;
+    height: 40vh;
+    background-image: url("../img/desktop/pool/pool_animation_arrow.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: calc(384.19 /1080 * 100vh);
+    left: calc(1711.45 / 1920 *100vw);
+}
+
+#text_tupa{
+    width: 6.564vw;
+    height: 21.57vh;
+    background-image: url("../img/desktop/pool/pool_text_tupa.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: calc(490.95 /1080 * 100vh);
+    left: calc(1522.82 / 1920 *100vw);
+}
