@@ -1,0 +1,14 @@
+@keyframes redline_animate{
+    0%{
+        opacity: 1;
+        visibility: visible;
+    }
+    100%{
+        opacity: 0;
+        visibility:hidden;
+    }
+}
+/* redline問題 一次性消失又出現 */
+#redline{
+    animation: redline_animate 0.5s ease;
+}

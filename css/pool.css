@@ -55,8 +55,8 @@
     left: 33.67vw;
 }
 #animate_arrow{
-    width: 4.72vw;
-    height: 40vh;
+    width: calc(92 / 1920 *100vw);
+    height: calc(430 /1080 * 100vh);
     background-image: url("../img/desktop/pool/pool_animation_arrow.png");
     background-repeat: no-repeat;
     position: absolute;
@@ -65,11 +65,21 @@
 }
 
 #text_tupa{
-    width: 6.564vw;
-    height: 21.57vh;
+    width: calc(127/ 1920 *100vw);
+    height: calc(250 /1080 * 100vh);
     background-image: url("../img/desktop/pool/pool_text_tupa.png");
     background-repeat: no-repeat;
     position: absolute;
     top: calc(490.95 /1080 * 100vh);
     left: calc(1522.82 / 1920 *100vw);
+}
+#pool_img{
+    width: calc(430/ 1920 *100vw);
+    height: calc(599 /1080 * 100vh);
+    background-image: url("../img/desktop/pool/pool_img.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: calc(397.32 /1080 * 100vh);
+    left: calc(184.82 / 1920 *100vw);
+    z-index: 6;
 }
