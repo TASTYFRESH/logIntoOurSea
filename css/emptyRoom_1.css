@@ -64,12 +64,12 @@
         background-size: cover;
     }
     #empty_1_arrow{
-        width: 5.9vw;
-        height: 33.333vh;
+        width: calc(52.79/430 * 100vw);
+        height: calc(167.67/932 * 100vh);
         position: absolute;
-        top: 58.52vh;
-        left: 57.51vw;
-        background-image: url("../img/desktop/emptyRoom/emptyRoom_01_rightArrow.png");
+        top: calc(567.3/932 * 100vh);
+        left: calc(264.46/430 * 100vw);
+        background-image: url("../img/mobile/emptyRoom/emptyRoom_01_m_rightArrow.png");
         background-size: cover;
         z-index: 3;
     }
@@ -78,7 +78,7 @@
         width: 85vw;
         height: 15vh;
         position: absolute;
-        top: 84%;
+        top: 84vh;
         left: 50%;
         transform: translate(-50%,-50%);
         background-image: url("../img/mobile/emptyRoom/emptyRoom_01_m_animation_img_bottom.png");
