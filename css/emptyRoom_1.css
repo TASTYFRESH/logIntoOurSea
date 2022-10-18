@@ -29,10 +29,10 @@
 }
 
 #animation_1_right{
-    width: 11.77vw;
-    height: 87.31vh;
+    width: calc(227/1920*100vw);
+    height: calc(985/1080*100vh);
     position: absolute;
-    top: 6.38vh;
+    top: calc(58/1080*100vh);
     left: 84.42vw;
     background-image: url("../img/desktop/emptyRoom/emptyRoom_01_animation_img_right.png");
     background-size: cover;
@@ -40,7 +40,7 @@
 }
 #animation_1_right:hover{
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 /* RWD */
