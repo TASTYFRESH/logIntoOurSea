@@ -15,16 +15,27 @@
     background-image: url("../img/desktop/pool/pool_animation_redline.png");
 }
 
+#drag_container{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+
 
 #drag_centerImg{
     width: 26.92vw;
     height: 61.87vh;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     background-image: url("../img/desktop/pool/pool_drag_centerImg.png");
     background-size: cover;
+    /* 最上層 */
+
 }
 
 #pool_line{
