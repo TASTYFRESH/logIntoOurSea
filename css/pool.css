@@ -1,0 +1,28 @@
+#pool_bg{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url("../img/desktop/pool/pool_bg.png");
+    background-size: cover;
+}
+
+#redline{
+    width: 36.12vw;
+    height: 93.12vh;
+    position: absolute;
+    top: 6.82vh;
+    left: 0.97vw;
+    background-image: url("../img/desktop/pool/pool_animation_redline.png");
+}
+
+
+#drag_centerImg{
+    width: 26.92vw;
+    height: 61.87vh;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url("../img/desktop/pool/pool_drag_centerImg.png");
+    background-size: cover;
+}
