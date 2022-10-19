@@ -120,13 +120,17 @@
     }
 
     #empty_2_right_img{
-        width: 58.12vw;
-        height: 26.98vh;
+        width: calc(280/430*100%);
+        height: calc(350/932*100%);
         position: absolute;
         top: 4.61vh;
-        left: 42.09vw;
+        right: 0;
+        left: auto;
         background-image: url("../img/mobile/emptyRoom/emptyRoom_02_m_text_whiteText.png");
         background-size: cover;
+    }
+    #text_container{
+        display: none;
     }
 }
 
