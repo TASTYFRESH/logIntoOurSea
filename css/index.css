@@ -58,28 +58,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    transform: translate(-100%,0%);
-    left:100%;
-    top: 0%;
+    transform: translate(-50%,-50%);
+    left:50%;
+    top: 50%;
     animation: saso_change 3s linear infinite;
     z-index: 3;
 }
 
-
-/* @keyframes saso_change{
-    0%{
-        background-image: url("../img/desktop/index/index_animation_saso_01.png");
-    }
-    33.3333%{
-        background-image: url("../img/desktop/index/index_animation_saso_02.png");
-    }
-    66.6666%{       
-        background-image: url("../img/desktop/index/index_animation_saso_03.png");
-    }
-    100%{
-        background-image: url("../img/desktop/index/index_animation_saso_01.png");
-    }
-} */
 
 
 #index_text{
@@ -95,11 +80,6 @@
     top: 50%;
     z-index: 2;
 }
-
-
-
-
-
 #index_title{
     width: calc(1295.75/1920 * 100vw);
     height: calc(94.19/1080 * 100vh);
@@ -107,4 +87,52 @@
     background-size: cover;
 }
 
+@media(max-width:576px){
+    #index_bg{
+        width: 430px;
+        height: 932px;
+        background-image: url("../img/mobile/index/index_m_bg.png");
+        background-size: contain;
+        background-position: center;
+        position: relative;
+        background-repeat: no-repeat;
+    }
+    #index_foot_1{
+        width: calc(100/430 * 100vw);
+        height: calc(140/932 * 100vh);
+        background-image: url("../img/mobile/index/index_animation_m_foot_01.png");
+        top: calc(799.26/932 *100vh);
+        left: calc(23.17/430 *100vw);
+    }
+
+    #index_foot_2{
+        width: calc(50/430 * 100vw);
+        height: calc(140/932 * 100vh);
+        background-image: url("../img/mobile/index/index_animation_m_foot_02.png");
+        left: calc(204.06/430 *100vw); 
+    }
+    #index_text_container{
+        width: calc(377.9/430 * 100vw);
+        height: calc(130.79/932 * 100vh);
+    }
+    #index_text{
+        width: calc(374/430 * 100vw);
+        height: calc(60/932 * 100vh);
+        background-image: url("../img/mobile/index/index_m_text.png");
+        background-position: center;
+        z-index: 2;
+    }
+    #index_saso{
+        width: calc(373/430 * 100vw);
+        height: calc(84/932 * 100vh);
+        background-image: url("../img/mobile/index/index_animation_m_saso_01.png");
+        background-position: center;
+    }
+    #index_title{
+        width: calc(380/430 * 100vw);
+        height: calc(65/932 * 100vh);
+        background-image: url("../img/mobile/index/index_m_title.png");
+        background-position: center;
+    }
+}
 
