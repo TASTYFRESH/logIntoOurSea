@@ -34,3 +34,32 @@ position: absolute;
     animation-duration: 0.25s;
     animation-iteration-count: infinite;
 }
+
+@media (max-width: 576px) {
+    body{
+        background-image: url(../img/mobile/toolRoom/toolRoom_01_0_m_bg.png);
+        background-size: cover;
+    }
+
+    #container img[src="../../img/desktop/toolRoom/toolRoom_01_btn_vedio.png"]{
+        content: url(../img/mobile/toolRoom/toolRoom_01_m_btn_vedio.png);
+        width: 15vw;
+        height: auto;
+        top: 30vh;
+        right: 38vw;
+    }
+
+    
+    #container img[src="../../img/desktop/toolRoom/toolRoom_01_btn_next.png"]{
+        content: url(../img/mobile/toolRoom/toolRoom_01_m_btn_next.png);
+        width: 20vw;
+        height: auto;
+        bottom: 4vh;
+        left: 40vw;
+        animation-name: flicker;
+        animation-duration: 0.25s;
+        animation-iteration-count: infinite;
+    }
+}
+
+    
