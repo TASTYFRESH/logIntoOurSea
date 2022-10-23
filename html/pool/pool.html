@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pool</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/pool.css">
+    <link rel="stylesheet" href="../../css/rotate_animation.css">
+    <!-- draggable -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#drag_centerImg" ).draggable({
+                // 限制draggable範圍
+                containment: "parent",
+            });
+        } );
+
+
+        </script>
 </head>
 <body>
-    
+    <div id="pool_bg"></div>
+    <div id="redline"></div>
+    <div id="drag_container">
+        <div id="drag_centerImg"></div>
+    </div>
+    <div id="pool_line"></div>
+    <div id="animate_right"></div>
+    <div id="animate_left"></div>
+    <div id="animate_arrow"></div>
+    <div id="text_tupa"></div>
+    <div id="pool_img"></div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="../../js/emptyRoom_pool.js"></script>
 </body>
 </html>

@@ -1,0 +1,137 @@
+/*  #region empty_2頁面 */
+#empty_2_bg{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/desktop/emptyRoom/emptyRoom_02_bg.png");
+    background-size: cover;
+    position: relative;
+}
+
+#empty_2_left_img{
+    width: 35.55vw;
+    height: 48.38vh;
+    position: absolute;
+    top: 32.72vh;
+    left: 11.953vw;
+    background-image: url("../img/desktop/emptyRoom/emptyRoom_02_img_rleft.png");
+    background-size: cover;
+
+}
+
+#empty_2_blue{
+    width: 28.996vw;
+    height: 7.599vh;
+    position: absolute;
+    top: 58.50vh;
+    left: 13.426vw;
+    background-image: url("../img/desktop/emptyRoom/emptyRoom_02_text_blueText.png");
+    background-size: cover;
+}
+
+#empty_2_right_img{
+    width: 32.311vw;
+    height: 59.10vh;
+    position: absolute;
+    top: 10.01vh;
+    left: 56.51vw;
+    background-image: url("../img/desktop/emptyRoom/emptyRoom_02_img_right.png");
+    background-size: cover;
+}
+
+#empty_2_saso{
+    width: 79.10vw;
+    height: 24.714vh;
+    position: absolute;
+    top: 42.7vh;
+    left: 9.86vw;
+    background-image: url("../img/desktop/emptyRoom/emptyRoom_02_text_saso.png");
+    background-size: cover;
+    z-index: 4;
+}
+/* #endregion  */
+
+/* #region 文字動畫 */
+
+#text_container{
+    width: calc(180 / 1920 * 100vw);
+    height: calc(480 / 1080 * 100vh);
+    position: absolute;
+    top: calc( 135/1080 * 100vh);
+    left: calc(1226.48/1920 * 100vw);
+    z-index: 99;
+    padding: 0;
+}
+
+.what_text{
+    width: calc(150 / 1920 * 100vw);
+    height: calc(20 / 1080 * 100vh);
+    background-image: url("../img/desktop/emptyRoom/emptyRoom_02_animation_01.png");
+    background-size: cover;
+}
+
+.margin_1{
+    margin-right: 0;
+    margin-bottom: calc(3 / 1080 * 100vh);
+}
+.margin_1:last-child{
+    margin-bottom: 0px;
+}
+.margin_2{
+    margin-left: calc(22 / 1920 * 100vw);
+    margin-bottom: calc(-10 / 1080 * 100vh);
+}
+
+.amI_text{
+    width: calc(113 / 1920 * 100vw);
+    height: calc(20 / 1080 * 100vh);
+    margin-left: calc(22 / 1920 * 100vw);
+    background-image: url("../img/desktop/emptyRoom/emptyRoom_02_animation_35.png");
+    background-size: cover;
+}
+
+/* #endregion  */
+
+/* #region RWd */
+@media (max-width: 576px){
+    #empty_2_bg{
+        /* 寬高單待處理 */
+        width: 100vw;
+        height: 100vh;
+
+        background-image: url("../img/mobile/emptyRoom/emptyRoom_02_m_bg.png");
+        background-size: cover;
+        position: relative;
+    }
+    #empty_2_left_img{
+        width: 87.89vw;
+        height: 30vh;
+        position: absolute;
+        top: 50vh;
+        left: 4.883vw;
+        background-image: url("../img/mobile/emptyRoom/emptyRoom_02_m_text_blueText.png");
+        background-size: cover;
+    }
+    /* saso,blue併入left_img */
+    #empty_2_saso{
+        display: none;
+    }
+    #empty_2_blue{
+        display: none;
+    }
+
+    #empty_2_right_img{
+        width: calc(280/430*100%);
+        height: calc(350/932*100%);
+        position: absolute;
+        top: 4.61vh;
+        right: 0;
+        left: auto;
+        background-image: url("../img/mobile/emptyRoom/emptyRoom_02_m_text_whiteText.png");
+        background-size: cover;
+    }
+    #text_container{
+        display: none;
+    }
+}
+
+/* #endregion  */
