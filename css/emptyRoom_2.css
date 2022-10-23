@@ -1,4 +1,4 @@
-/* empty_2頁面 */
+/*  #region empty_2頁面 */
 #empty_2_bg{
     width: 100vw;
     height: 100vh;
@@ -48,6 +48,7 @@
     background-size: cover;
     z-index: 4;
 }
+/* #endregion  */
 
 /* #region 文字動畫 */
 
@@ -89,7 +90,6 @@
 }
 
 /* #endregion  */
-
 
 /* #region RWd */
 @media (max-width: 576px){

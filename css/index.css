@@ -1,3 +1,4 @@
+/* #region Web */
 #index_bg{
     width: 100vw;
     height: 100vh;
@@ -28,11 +29,9 @@
     top: calc(764/1080*100vh);
     left: calc(1052/1920 *100vw);
 }
+/* #endregion  */
 
-
-
-
-/* 文字容器 */
+/* #region 文字容器 */
 #index_text_container{
     width: calc(1346.7/1920 * 100vw);
     height: calc(427.57/1080 * 100vh);
@@ -65,8 +64,6 @@
     z-index: 3;
 }
 
-
-
 #index_text{
     width: calc(1346.7/1920 * 100vw);
     height: calc(172/1080 * 100vh);
@@ -86,7 +83,9 @@
     background-image: url("../img/desktop/index/index_title.png");
     background-size: cover;
 }
+/* #endregion  */
 
+/* #region RWD  */
 @media(max-width:576px){
     #index_bg{
         width: 430px;
@@ -135,4 +134,4 @@
         background-position: center;
     }
 }
-
+/* #endregion  */

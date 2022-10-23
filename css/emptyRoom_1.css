@@ -1,3 +1,4 @@
+/* #region Web */
 #empty_1_bg{
     width: 100vw;
     height: 100vh;
@@ -42,33 +43,35 @@
     cursor: pointer;
     transform: scale(1.05);
 }
+/* #endregion */
 
-/* RWD */
+/* #region RWD */
 @media (max-width: 576px){
     #empty_1_bg{
         width: 100vw;
         /* 待處理 */
-        height: 100vh;
+        height: 932px;
         position: relative;
         background-image: url("../img/mobile/emptyRoom/emptyRoom_01_m_bg.png");
+        background-position: 10%;
         background-size: cover;
         background-repeat: no-repeat;
     }
     #animation_1_left{
-        width: 21.72vw;
-        height: 14.98vh;
+        width: calc(94 /430 *100vw);
+        height: calc(132 /932 *100vh);
         position: absolute;
-        top: 71.24vh;
-        left:5.11vw;
+        top: 664px;
+        left: calc(22/430*100vw);
         background-image: url("../img/mobile/emptyRoom/emptyRoom_01_m_left.png");
         background-size: cover;
     }
     #empty_1_arrow{
         width: calc(52.79/430 * 100vw);
-        height: calc(167.67/932 * 100vh);
+        height: calc(175/932 * 100vh);
         position: absolute;
-        top: calc(567.3/932 * 100vh);
-        left: calc(264.46/430 * 100vw);
+        top: calc(850/932 * 100vh);
+        left: calc(280/430 * 100vw);
         background-image: url("../img/mobile/emptyRoom/emptyRoom_01_m_rightArrow.png");
         background-size: cover;
         z-index: 3;
@@ -78,11 +81,14 @@
         width: 85vw;
         height: 15vh;
         position: absolute;
-        top: 84vh;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        top: 795.96px;
+        left: 7.5vw;
         background-image: url("../img/mobile/emptyRoom/emptyRoom_01_m_animation_img_bottom.png");
         background-size: cover;
         z-index: 3;
     }
+    #animation_1_right:hover{
+        transform:  scale(1);
+    }
 }
+/* #endregion  */

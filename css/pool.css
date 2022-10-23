@@ -1,3 +1,4 @@
+/* #region Web */
 #pool_bg{
     width: 100vw;
     height: 100vh;
@@ -97,3 +98,73 @@
     left: calc(184.82 / 1920 *100vw);
     z-index: 6;
 }
+/* #endregion  */
+
+/* #region RWD */
+
+@media (max-width: 576px){
+    #pool_bg{
+        background-image: url("../img/mobile/pool/pool_m_bg.png");
+        
+    }
+
+    #redline{
+        display: none;
+    }
+    #drag_centerImg{
+        width: calc(229/430 *100vw);
+        height: calc(296/932 *100vh);
+        background-image: url("../img/mobile/pool/pool_m_drag_centerImg.png");
+    }
+    #pool_line{
+        width: calc(132/430 *100vw);
+        height: calc(363/932 *100vh);
+        background-image: url("../img/mobile/pool/pool_m_line.png");
+        top: calc(570/932*100vh);
+        left: calc(299.44/430*100vw);
+    }
+
+    #animate_left{
+        width: calc(90/430 *100vw);
+        height: calc(150/932 *100vh);
+        background-image: url("../img/mobile/pool/pool_m_animation_right.png");
+        top: calc(620/932*100vh);
+        left: calc(50/430*100vw);
+    }
+
+    #animate_right{
+        width: calc(90/430 *100vw);
+        height: calc(150/932 *100vh);
+        background-image: url("../img/mobile/pool/pool_m_animation_right.png");
+        top: calc(245/932*100vh);
+        left: calc(288/430*100vw);
+    }
+    #pool_img{
+        width: calc(250/430 *100vw);
+        height: calc(500/932 *100vh);
+        background-image: url("../img/mobile/pool/pool_m_img.png");
+        background-position: center;
+        top: calc(70/932*100vh);
+        left: calc(27/430*100vw);
+    }
+
+    #animate_arrow{
+        width: calc(45/430 *100vw);
+        height: calc(199/932 *100vh);
+        background-image: url("../img/mobile/pool/pool_m_animation_arrow.png");
+        background-size: cover;
+        top: calc(671.63/932*100vh);
+        left: calc(372.02/430*100vw);
+    }
+
+    #text_tupa{
+        width: calc(62/430 *100vw);
+        height: calc(140/932 *100vh);
+        background-image: url("../img/mobile/pool/pool_m_text_tupa.png");
+        background-size: cover;
+        top: calc(723.71/932*100vh);
+        left: calc(280/430*100vw);
+    }
+}
+
+/* #endregion  */
