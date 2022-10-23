@@ -1,3 +1,9 @@
+@keyframes animation_saso {
+    0%{opacity: 0;}
+    100%{opacity: 100%;}
+}
+
+
 body{
     background-image: url(../img/desktop/floor/floor_bg.png);
     background-size: cover;
@@ -9,8 +15,8 @@ body{
 }
 
 #floor_clickBtn{
-    width: fit-content;
-    height: fit-content;
+    width: 8.5vw;
+    height: auto;
     position: absolute;
     top: 30vh;
     right: 6vw;
@@ -18,7 +24,7 @@ body{
 }
 
 #floor_clickBtn img{
-    width: 8.5vw;
+    width: 100%;
 }
 
 #floor_text{
@@ -31,8 +37,8 @@ body{
 }
 
 #floor_img_bottom{
-    height: fit-content;
-    width: fit-content;
+    height: 18.5vh;
+    width: auto;
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -41,7 +47,7 @@ body{
 }
 
 #floor_img_bottom img{
-    height: 18.5vh;
+    height: 100%;
     width: auto;
 }
 
@@ -54,20 +60,33 @@ body{
 }
 
 #floor_animation_saso{
-    width: fit-content;
+    width: 20vw;
     height: auto;
     position: absolute;
     left: 20vw;
     top: 5vh;
     display: flex;
     flex-direction: column;
-    z-index: 3;
+    z-index: 3;;
 }
 
 #floor_animation_saso img{
-    width: 20vw;
+    opacity: 0;
+    width: 100%;
     height: auto;
     margin-bottom: -15px;
+    animation-name: animation_saso;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+#floor_animation_saso img[src="../../img/desktop/floor/floor_animation_saso_02.png"]{
+    animation-delay: 2s;
+}
+
+#floor_animation_saso img[src="../../img/desktop/floor/floor_animation_saso_03.png"]{
+    animation-delay: 4s;
 }
 
 #floor_animation_star{
@@ -77,4 +96,73 @@ body{
     left: 0;
     bottom: 0;
     z-index: 1;
+}
+
+/* RWD: 576px */
+
+@media  (max-width: 576px){
+
+    body{
+        background-image: url(../img/mobile/floor/floor_m_bg.png);
+    }
+
+    #floor_clickBtn{
+        content: url(../img/mobile/floor/floor_m_clickBtn.png);
+            width: 13vw;
+            height: auto;
+            position: absolute;
+            top: 56vh;
+            right: 10vw;
+            z-index: 999;
+    }
+
+    #floor_img_top{
+        content: url(../img/mobile/floor/floor_m_img_top.png);
+        width: calc(75/576*100vh);
+        height: auto;
+        top: 39vh;
+    }
+
+    #floor_img_bottom:first-child{
+        content: url(../img/mobile/floor/floor_m_img_bottom_left.png);
+    }   
+
+    #floor_img_bottom:last-child{
+        content: url(../img/mobile/floor/floor_m_img_bottom_right.png);
+    }   
+
+    #floor_img_bottom{   
+        height: 12vh;
+        bottom: 2vh;
+    }
+
+    #floor_animation_saso:nth-child(1){
+        content: url(/./img/mobile/floor/floor_m_animation_saso_01.png);
+    }
+    
+    #floor_animation_saso:nth-child(2){
+        content: url(/./img/mobile/floor/floor_m_animation_saso_02.png);
+    }
+
+    #floor_animation_saso:nth-child(3){
+        content: url(/./img/mobile/floor/floor_m_animation_saso_03.png);
+    }
+
+    #floor_animation_saso{
+        width: calc((140/430)*100vw);
+        top: 63vh;
+        left: 40vw;
+    }
+
+    #floor_text{
+        content: url(../img/mobile/floor/floor_m_text.png);
+        width: 30vw;
+        bottom: 75vh;
+    }
+
+    #floor_animation_star{
+        content: url(../img/mobile/floor/floor_m_animation_star.png);
+    }
+    
+
 }
