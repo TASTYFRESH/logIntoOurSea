@@ -88,11 +88,10 @@
 /* #region RWD  */
 @media(max-width:576px){
     #index_bg{
-        width: 430px;
-        height: 932px;
+        width: 100vw;
+        height: 100vh;
         background-image: url("../img/mobile/index/index_m_bg.png");
-        background-size: contain;
-        background-position: center;
+        background-position: right bottom;
         position: relative;
         background-repeat: no-repeat;
     }
@@ -100,15 +99,18 @@
         width: calc(100/430 * 100vw);
         height: calc(140/932 * 100vh);
         background-image: url("../img/mobile/index/index_animation_m_foot_01.png");
-        top: calc(799.26/932 *100vh);
+        top: auto;
         left: calc(23.17/430 *100vw);
+        bottom: calc(100/932 *100vh);
     }
 
     #index_foot_2{
         width: calc(50/430 * 100vw);
         height: calc(140/932 * 100vh);
         background-image: url("../img/mobile/index/index_animation_m_foot_02.png");
-        left: calc(204.06/430 *100vw); 
+        left: calc(204.06/430 *100vw);
+        top: auto;
+        bottom: calc(275/932 *100vh);
     }
     #index_text_container{
         width: calc(377.9/430 * 100vw);
