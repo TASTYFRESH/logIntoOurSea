@@ -1,0 +1,65 @@
+@keyframes flicker {
+    0%{opacity: 100%;}
+    75%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+body{
+    background-image: url(../img/desktop/toolRoom/toolRoom_01_bg.png);
+    background-size: contain;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+}
+
+#container img{
+position: absolute;
+}
+
+#container img[src="../../img/desktop/toolRoom/toolRoom_01_btn_vedio.png"]{
+    width: 6vw;
+    height: auto;
+    top: 55vh;
+    right: 35vw;
+}
+
+#container img[src="../../img/desktop/toolRoom/toolRoom_01_btn_next.png"]{
+    width: 8.5vw;
+    height: auto;
+    bottom: 8vh;
+    left: 35vw;
+    animation-name: flicker;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+}
+
+@media (max-width: 576px) {
+    body{
+        background-image: url(../img/mobile/toolRoom/toolRoom_01_0_m_bg.png);
+        background-size: cover;
+    }
+
+    #container img[src="../../img/desktop/toolRoom/toolRoom_01_btn_vedio.png"]{
+        content: url(../img/mobile/toolRoom/toolRoom_01_m_btn_vedio.png);
+        width: 15vw;
+        height: auto;
+        top: 30vh;
+        right: 38vw;
+    }
+
+    
+    #container img[src="../../img/desktop/toolRoom/toolRoom_01_btn_next.png"]{
+        content: url(../img/mobile/toolRoom/toolRoom_01_m_btn_next.png);
+        width: 20vw;
+        height: auto;
+        bottom: 4vh;
+        left: 40vw;
+        animation-name: flicker;
+        animation-duration: 0.25s;
+        animation-iteration-count: infinite;
+    }
+}
+
+    
