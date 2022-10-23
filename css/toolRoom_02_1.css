@@ -23,3 +23,29 @@ img[src="../../img/desktop/toolRoom/toolRoom_02_1_btn_back.png"]{
     left: 4vw;
     top: 70vh;
 }
+
+@media (max-width: 576px) {
+    body{
+        background-image: url(../img/mobile/toolRoom/toolRoom_02_1_m_bg.png);
+    }
+
+    #img_size img[src="../../img/desktop/toolRoom/toolRoom_02_1_img.png"]{
+        content: url(../img/mobile/toolRoom/toolRoom_02_1_m_img.png);
+        width: 86vw;
+        height: auto;
+        position: absolute;
+        top: 5vh;
+        left: 4vw;
+    }
+
+    img[src="../../img/desktop/toolRoom/toolRoom_02_1_btn_back.png"]{
+        content: url(../img/mobile/toolRoom/toolRoom_02_1_m_btn_back.png);
+        width: 32vw;
+        height: auto;
+        position: absolute;
+        left: 4vw;
+        top: 54vh;
+    }
+
+
+}
